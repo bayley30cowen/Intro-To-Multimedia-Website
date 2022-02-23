@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hobbies</title>
+<script type="application/javascript" src="js/style.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script> 
+<link id="pagestyle" href="styles/responsive-s.css" rel="stylesheet" type="text/css">
+<link href="styles/lightbox.css" rel="stylesheet" type="text/css">
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/source-sans-pro:n4,n2,n6:default.js" type="text/javascript"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div id="wrap">
+  <header>
+    <h1>Hobbies</h1>
+    <nav>
+      <h2 id="menulink"><a href="#navlinks">Menu</a></h2>
+      <ul class="displayed" id="navlinks">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="welcomevid.html">Welcome Video</a></li>
+        <li><a href="hobbies.html" class="thispage">Hobbies</a></li>
+        <li><a href="coursework.html">Coursework</a></li>
+        <li><a href="animation.html">Animation </a></li>
+      </ul>
+    </nav>
+  </header>
+<h2 style="text-align:center">Lightbox of Stock Images</h2>
+<p>Stock photos I have collected through google images. If you <b>click</b> on one of these images the lightbox will open showing the full album of photos. From there you can use sliders to move between photos or close the lightbox using the large X in the top right.</p>
+<div class="row">
+  <div class="column">
+    <img src="images/meme1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/meme2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/meme3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/meme4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/meme5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/meme6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/meme7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/meme8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+</div>
+<figcaption>[Online] All stock photos availble from: <a href="https://www.google.com/images">https://www.google.com/images</a> [Accessed 13 Nov 2018]</figcaption>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+      <img src="images/meme1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+      <img src="images/meme2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+      <img src="images/meme3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+      <img src="images/meme4.jpg" style="width:100%">
+    </div>
+    
+	<div class="mySlides">
+      <div class="numbertext">5 / 8</div>
+      <img src="images/meme5.jpg" style="width:100%">
+    </div>
+	
+	<div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+      <img src="images/meme6.jpg" style="width:100%">
+    </div>
+	
+	<div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+      <img src="images/meme7.jpg" style="width:100%">
+    </div>
+	
+	<div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+      <img src="images/meme8.jpg" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="images/meme1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Rollsafe">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/meme2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Castle">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/meme3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Rock">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/meme4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Pier">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="images/meme5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Cat">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="images/meme6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Car">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="images/meme7.jpg" style="width:100%" onclick="currentSlide(7)" alt="John Cena">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="images/meme8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Car 2">
+    </div>
+  </div>
+</div>
+
+<h2 style="text-align:center">Audio Album</h2>
+<div id="music">
+<audio src="" controls id="audioPlayer">
+Sorry your browser doesn't support HTML5
+</audio>
+<figcaption>[Online] All songs available from: <a href="https://www.youtube.com/music">https://www.youtube.com/music</a> and downloaded using the youtube premium feature. [Accessed 13 Nov 2018]</figcaption>
+<ul id="playlist">
+<li class="current-song"><a href="audio/Pockets.mp3">Easy Life - Pockets</a></li>
+<li><a href="audio/AYH.mp3">Bad Sounds - Are you High?</a></li>
+<li><a href="audio/Wages.mp3">Bad Sounds - Wages</a></li>
+<li><a href="audio/Honestly.mp3">Bad Sounds - Honestly</a></li>
+<li><a href="audio/Sixteen.mp3">Rose Dive - Sixteen</a></li>
+<li><a href="audio/TheseDays.mp3">Wallows - These Days</a></li>
+<li><a href="audio/OurGen.mp3">Everywhere You Know - Our Generation</a></li>
+</ul>
+</div>
+<div id="text">
+<p>Another hobby that I plough hours into everyday, is music. I tend to listen to listen to music extremely often when I'm travelling between university and home, as well as going back and forth between work. Genres of music I tend to listen to are "Indie pop" with the occasional tune from the 80s or late 90s.</p>
+<p>The feature to the left is a small playlist, created by me, where by clicking the name of the song the song will play using the audio HTML 5 tag. Once the song completes, the next song will play, and if you reach the end of the playlist, the playlist will loop back to the top. Note: The songs may be quite loud, so I have set the default volume to 0.18 in order to preserve your hearing.</p>
+</div>
+<script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+<script src="js/audioPlayer.js"></script>
+<script>
+audioPlayer();
+</script>
+  <footer>
+    <p>© Copyright 2018 <a href="https://twitter.com/bayleycowen">BCS</a></p>
+	<button id="stylesheet1" > Default Style </button>
+	<button id="stylesheet2" > Dyslexic Style </button>
+  </footer>
+  <script type="text/javascript" src="js/menu.js"></script> 
+</div>
+</body>
+</html>
